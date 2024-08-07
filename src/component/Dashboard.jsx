@@ -16,12 +16,11 @@ const Dashboard = () => {
     <div className='w-full pb-72 overflow-y-auto custom-scrollbar px-4 bg-[#141416] text-white  flex flex-col gap-4'>
       <span className='font-extrabold text-lg pt-8'>Dashboard</span>
       <div className='w-full flex flex-col lg:flex-row  justify-center text-white gap-8  py-4'>
-        <div className='md:w-full lg:w-[60%] flex justify-center flex-col md:flex-row gap-2  '>
+        <div className='md:w-full lg:w-[70%] flex justify-center flex-col md:flex-row gap-2  '>
           {basicInfo.map((item, index) => {
             return (
               <div className='w-full md:w-[30%] flex flex-col justify-center p-4 bg-light_black  text-white gap-4 ' key={index}>
-                {/* <LuWallet/> */}
-                <span className={`bg-${item.color} px-4`}>
+                <span className={`${item.bg} w-max p-2 rounded-md`}>
                   <FontAwesomeIcon icon={item.icon} className={`w-10 h-10 text-${item.color}`} />
                 </span>
                 <span className='text-xs font-thin'>{item.text}</span>
@@ -40,12 +39,17 @@ const Dashboard = () => {
           })}
         </div>
 
-        <div className='md:w-full lg:w-[40%] text-white flex gap-4 bg-light_black p-6 rounded-md'>
+        <div className='md:w-full  lg:w-[30%] text-white flex justify-between bg-light_black p-6 rounded-md'>
 
           <div className='flex flex-col gap-4'>
             <span className='text-sm'>Net Profit</span>
             <span className='text-2xl md:text-5xl font-bold'>$6759.25</span>
-            <span>3</span>
+            <div>
+            <span className={'text-green-600' }>
+                      {  <FaSortUp /> }
+                    </span>
+                    <span className='text-green-600'>3%</span>
+            </div>                   
           </div>
 
           <div>
@@ -64,19 +68,19 @@ const Dashboard = () => {
         </div>
       </div>
       <div className='flex flex-col md:flex-row gap-8 '>
-  <div className='w-full lg:w-[60%]  flex flex-col'>
+  <div className='w-full lg:w-[70%]  flex flex-col'>
     <ActivityChart className='flex-1' />
   </div>
-  <div className='w-full lg:w-[40%] flex flex-col'>
+  <div className='w-full lg:w-[30%] flex flex-col'>
     <GoalsSection className='flex-1' />
   </div>
 </div>
 
       <div className=' w-full justify-center flex gap-8 h-[50%]  flex-col lg:flex-row '>
-        <div className='w-full  md:w-full lg:w-[60%]  flex justify-center'>
+        <div className='w-full md:w-full lg:w-[70%]  flex justify-center'>
           <RecentOrders />
         </div>
-        <div className='w-full  md:w-full lg:w-[40%]   '>
+        <div className='w-full  md:w-full lg:w-[30%]'>
           <CustomerFeedback />
         </div>
       </div>

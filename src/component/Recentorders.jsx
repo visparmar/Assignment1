@@ -24,10 +24,10 @@ function RecentOrders() {
   ];
 
   return (
-    <section className="w-screen  bg-light_black rounded-lg overflow-auto h-[500px]  custom-scrollbar ">
-    <h2 className="text-white text-xl mb-4 sticky top-0 bg-light_black w-full">Recent Orders</h2>
+    <section className="w-full bg-light_black rounded-lg overflow-auto h-[500px]  custom-scrollbar ">
+    <h2 className="text-white text-xl mb-4 sticky top-0 bg-light_black w-full p-2">Recent Orders</h2>
     <table className="w-full text-left text-white border-collapse">
-      <thead className='sticky top-6 bg-light_black'>
+      <thead className='sticky top-8 bg-light_black'>
         <tr >
           <th className="border-b-2 border-gray-600 p-2">Customer</th>
           <th className="border-b-2 border-gray-600 p-2">Order No.</th>
@@ -39,7 +39,7 @@ function RecentOrders() {
         {orders.map((order, index) => (
           <tr key={index} className="border-b border-gray-600 ">
             <span className='flex items-center gap-2 py-2 object-contain'>
-            <img src={profile} alt="profile" className='w-10 h-auto  rounded-full'/>
+            <img src={profile} alt="profile" className='w-10 h-10  rounded-full'/>
             <td className="p-2">{order.customer}</td>
             </span>
          

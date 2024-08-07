@@ -8,11 +8,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
  
 const ActivityChart = () => {
     const data = {
-        labels: ['5', '9', '11', '13', '15', '17', '19', '21', '23', '25'],
+        labels: ['5', '9', '11', '13', '15', '17', '19', '21', '23', '25','30','35','40','45'],
         datasets: [
             {
                 label: 'Activity',
-                data: [5000, 10000, 7500, 15000, 12500, 10000, 5000, 12500, 10000, 15000],
+                data: [5000, 10000, 7500, 15000, 12500, 10000, 5000, 12500, 10000, 15000,10000, 5000, 12500, 10000],
                 backgroundColor: '#7294FF',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1,
