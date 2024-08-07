@@ -6,7 +6,8 @@ export const basicInfo = [
         percentage: 3,
         profit: 1,
         icon:faShoppingCart,
-        color:`blue-500`
+        color:`blue-500`,
+        bg:'bg-[#293467]'
     },
     {
         text: "Total Delivered",
@@ -14,7 +15,8 @@ export const basicInfo = [
         percentage: 3,
         profit: 0,
         icon:faTruck,
-         color:`green-500`
+        color:`green-500`,
+        bg:'bg-[#175246]'
     },
     {
         text: "Total Cancelled",
@@ -22,7 +24,8 @@ export const basicInfo = [
         percentage: 3,
         profit: 1,
         icon:faTimesCircle,
-         color:`red-500`
+        color:`red-500`,
+        bg:'bg-[#5E3238]'
     },
     {
         text: "Total Revenue",
@@ -30,6 +33,7 @@ export const basicInfo = [
         percentage: 3,
         profit: 1,
         icon:faDollarSign,
-         color:`pink-500`
+        color:`pink-500`,
+        bg:'bg-[#5B2A4A]'
     }
 ];
